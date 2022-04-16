@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body class="bg-neutralVeryDarkBlue font-baseFont text-basePara">
+    <div class="flex justify-center items-center min-h-screen">
+      <div
+        class="bg-gray-800 mobile:w-80 md:w-96 mobile:h-96 md:h-96 rounded-3xl"
+      >
+        <div
+          id="ratingsDiv"
+          class="flex flex-col min-h-full p-6 justify-between"
+        >
+          <div class="circle center">
+            <img class="w-5 h-5" src="../images/icon-star.svg" />
+          </div>
+          <h1 class="text-neutralWhite font-bold text-2xl">How did we do?</h1>
+          <p class="text-neutralMediumGrey">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+            voluptate nesciunt quia aliquid ipsum quibusdam reiciendis accusamus
+            recusandae omnis
+          </p>
+
+          <div class="container flex justify-evenly">
+            <button
+              type="button"
+              class="circle center hover:bg-primaryOrange text-neutralWhite"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              class="circle center hover:bg-primaryOrange text-neutralWhite"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              class="circle center hover:bg-primaryOrange text-neutralWhite"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              class="circle center hover:bg-primaryOrange text-neutralWhite"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              class="circle center hover:bg-primaryOrange text-neutralWhite"
+            >
+              5
+            </button>
+          </div>
+          <button
+            id="submitBtn"
+            class="bg-primaryOrange hover:bg-neutralWhite mt-3 p-3 rounded-3xl text-neutralWhite hover:text-primaryOrange uppercase"
+            type="button"
+          >
+            Submit
+          </button>
+        </div>
+        <div
+          id="thankYouDiv"
+          class="flex flex-col min-h-full p-6 justify-between items-center hidden"
+        >
+          <img class="w-36 h-32" src="../images/illustration-thank-you.svg" />
+          <div
+            id="template"
+            class="text-primaryOrange bg-neutralDarkBlue p-2 rounded-3xl"
+          ></div>
+          <h1 class="text-neutralWhite text-2xl">Thank You!</h1>
+          <p class="text-center text-neutralMediumGrey">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            pariatur natus accusamus beatae doloribus obcaecati ipsum culpa
+            labore dignissimos blanditiis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-neutralWhite text-center mb-4">
+      Challenge by
+      <a
+        class="text-primaryOrange"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a class="text-primaryOrange" href="#">Reuben</a>.
+    </div>
+  </body>
+</html>

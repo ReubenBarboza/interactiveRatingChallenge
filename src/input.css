@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .circle {
+    @apply w-12 h-12 bg-neutralDarkBlue text-neutralMediumGrey rounded-full;
+  }
+
+  .center {
+    @apply flex justify-center items-center;
+  }
+}
